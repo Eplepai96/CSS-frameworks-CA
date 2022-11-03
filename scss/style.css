@@ -1,1 +1,12 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: rgb(255, 248, 244);
+}
+
+header, footer, nav a, footer a, .post {
+  background-color: rgb(255, 255, 255);
+}
+
+nav a, footer a {
+  text-decoration: none;
+  color: green;
+}/*# sourceMappingURL=style.css.map */

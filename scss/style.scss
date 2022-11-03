@@ -1,4 +1,20 @@
 $colors: (
-    primary: limegreen,
-    
-)
+    primary: rgb(255, 248, 244),
+    secondary: green, 
+    tertiary: rgb(255, 255, 255)
+);
+
+body {
+    background-color: map-get($colors, primary);
+}
+
+header, footer, nav a, footer a, .post  {
+    background-color: map-get($colors, tertiary);
+}
+
+nav a, footer a {
+    text-decoration: none;
+    color: map-get($colors, secondary);
+}
+
+
