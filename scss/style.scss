@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Spectral&display=swap');
+
+$fonts: (
+    heading-font: ('Spectral', serif),
+    paragraph-font: ('Roboto Mono', monospace)
+);
+
 $colors: (
-    primary: rgb(255, 248, 244),
+    primary: rgb(248, 248, 248),
     secondary: green, 
     tertiary: rgb(255, 255, 255)
 );
@@ -8,13 +15,38 @@ body {
     background-color: map-get($colors, primary);
 }
 
-header, footer, nav a, footer a, .post  {
-    background-color: map-get($colors, tertiary);
-}
-
-nav a, footer a {
+nav a, footer a, .fa-heart, .fa-comment, .fa-share-square, .link-color {
     text-decoration: none;
     color: map-get($colors, secondary);
 }
 
+.fa-heart:hover, .fa-comment:hover, .fa-share-square:hover {
+    transform: scale(1.15);
+    transition: .2s ease-in-out;
+}
 
+header, footer, nav a, footer a, .post {
+    background-color: map-get($colors, tertiary);
+}
+
+.post, .user-image, button {
+    box-shadow: 1px 2px rgb(182, 182, 182);
+}
+
+button:hover {
+    box-shadow: none;
+    transition: .3s ease-in-out;
+}
+
+.active-nav, nav ul li:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
+p, a {
+    font-family: map-get($fonts, paragraph-font);
+}
+
+h1, h2, h3 {
+    font-family: map-get($fonts, heading-font);
+}

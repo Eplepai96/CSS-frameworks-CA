@@ -1,12 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Spectral&display=swap");
 body {
-  background-color: rgb(255, 248, 244);
+  background-color: rgb(248, 248, 248);
+}
+
+nav a, footer a, .fa-heart, .fa-comment, .fa-share-square, .link-color {
+  text-decoration: none;
+  color: green;
+}
+
+.fa-heart:hover, .fa-comment:hover, .fa-share-square:hover {
+  transform: scale(1.15);
+  transition: 0.2s ease-in-out;
 }
 
 header, footer, nav a, footer a, .post {
   background-color: rgb(255, 255, 255);
 }
 
-nav a, footer a {
-  text-decoration: none;
-  color: green;
+.post, .user-image, button {
+  box-shadow: 1px 2px rgb(182, 182, 182);
+}
+
+button:hover {
+  box-shadow: none;
+  transition: 0.3s ease-in-out;
+}
+
+.active-nav, nav ul li:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+p, a {
+  font-family: "Roboto Mono", monospace;
+}
+
+h1, h2, h3 {
+  font-family: "Spectral", serif;
 }/*# sourceMappingURL=style.css.map */
