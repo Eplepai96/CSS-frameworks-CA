@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Spectral&display=swap");
+@import url("/_typography.scss");
+@import url("/_colors.scss");
 body {
   background-color: rgb(248, 248, 248);
 }
@@ -26,13 +28,13 @@ button:hover {
   transition: 0.3s ease-in-out;
 }
 
-.active-nav, nav ul li:hover {
+.active-nav, a:hover {
   text-decoration: underline;
-  color: inherit;
+  color: green;
 }
 
 p, a {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", monospace;
 }
 
 h1, h2, h3 {

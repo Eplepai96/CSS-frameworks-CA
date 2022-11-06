@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagename | login</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="/src/scss/style.css">
     <script src="https://kit.fontawesome.com/da4fbc451d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container d-flex justify-content-center">
-        <div class="row">
-            <div class="col-12">
-                <i class="fas fa-6x fa-grin-beam d-flex justify-content-center mt-5"></i>
-                <form action="/profile">
-                    <div>
-                        <label for="email" class="mt-4">Email</label>
-                        <input class="w-100 rounded-5 bg-light border-light" type="email" id="email" pattern="email" required>
+    <main>
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                    <i class="far fa-6x fa-grin-beam d-flex justify-content-center mt-5"></i>
+                    <form action="/profile">
+                        <div>
+                            <label for="email" class="mt-4">Email</label>
+                            <input class="w-100 rounded-5 bg-white border-light" type="email" id="email" pattern="email" required>
+                        </div>
+                        <div>
+                            <label for="password" class="mt-3">Password</label>
+                            <input class="w-100 rounded-5 bg-white border-light" type="password" id="password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" minlength="5" required>
+                        </div>
+                        <input type="submit" value="Log in" class="btn btn-primary mt-4 w-100">     
+                    </form> 
+                    <div class="d-flex justify-content-center">
+                        <a href="home.html"><button class="btn btn-secondary mt-5">Skip for now</button></a>
                     </div>
-                    <div>
-                        <label for="password" class="mt-3" >Password</label>
-                        <input class="w-100 rounded-5 bg-light border-light" type="password" id="password" minlength="5" required>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary mt-4 w-100">Log in</button>  
-                    </div>      
-                </form> 
-                <div class="d-flex justify-content-center">
-                    <a href="home.html"><button class="btn btn-secondary mt-5">Skip for now</button></a>
-                </div>
-            </div>  
-        </div>     
-    </div>
+                </div>  
+            </div>     
+        </div>
+    </main>
 </body>
 </html>

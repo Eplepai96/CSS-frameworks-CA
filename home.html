@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagename - Home</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="/src/scss/style.css">
     <script src="https://kit.fontawesome.com/da4fbc451d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-
     <!-- Header -->
-
     <header>
         <nav class="container pt-3 pb-1">
             <ul class="row">
@@ -23,63 +21,59 @@
         </nav>
     </header>
     
-
     <!-- Create post -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 mt-5">
-                <h1>Create a post</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="container border border-black mt-2 post rounded">
-        <div class="row">
-            <div class="col-md-1 col-sm-1">
-                <i class="far fa-2x fa-grin-beam m-2"></i>
-            </div>
-            <div class="col-md-11 col-sm-11">
-                <p class="mt-2 fw-bold fs-5">Username</p> 
-            </div>
-            <div class="col-12 justify-content-center">
-                <form action="post">
-                    <input type="text" placeholder="Create a new post.." class="form-control form-control-lg border rounded-5 mb-4 mt-3">
-                </form>
-            </div>
+    <main>
+        <div class="container">
             <div class="row">
-                <div class="col-8">
-                    <button class="border border-0 btn btn-secondary"><i class="fa fa-images"> Add an image</i></button>
+                <div class="col-12 mt-5">
+                    <h1>Create a post</h1>
                 </div>
-                <div class="col-4"> 
-                    <button class="btn btn-primary m-1 float-end w-75">Post</button>
-                </div>
-            </div>  
+            </div>
         </div>
-    </div>
-
+    
+        <div class="container border border-black mt-2 post rounded">
+            <div class="row">
+                <div class="col-md-1 col-sm-1">
+                    <i class="far fa-2x fa-grin-beam m-2"></i>
+                </div>
+                <div class="col-md-11 col-sm-11">
+                    <p class="mt-2 fw-bold fs-5">Username</p> 
+                </div>
+                <div class="col-12 justify-content-center">
+                    <form action="post">
+                        <input type="text" placeholder="Create a new post.." class="form-control form-control-lg border rounded-5 mb-4 mt-3 w-75">
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <button class="border border-0 btn btn-secondary"><i class="fa fa-images"> Add an image</i></button>
+                    </div>
+                    <div class="col-4"> 
+                        <button class="btn btn-primary m-1 float-end px-4 fw-bold">Post</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </main>
 
     <!-- Search posts -->
-
     <div class="container mt-5">
         <div class="row">
             <div class="col-12">
                 <h2 class="mb-3">Looking for a post?</h2>
             </div>
-            <div class="col-10">
+            <div class="col-8">
                 <form action="">
-                    <input type="text" placeholder="Search posts..." class="form-control form-control-lg w-100  rounded-5">
+                    <input type="text" placeholder="Search posts..." class="form-control form-control-lg rounded-5">
                 </form>
             </div>
-            <div class="col-2">
+            <div class="col-4">
                 <button class="btn btn-primary p-2"><i class="fa fa-search"> Search</i></button>
             </div>
         </div>
     </div>
-
     
     <!-- Posts -->
-
     <!-- Text post -->
     <div class="container border border-black mt-3 rounded post">
         <div class="row border-bottom">
@@ -176,10 +170,8 @@
             </div>
         </div>
     </div>
-    
 
     <!-- Footer -->
-
     <footer>
         <div class="container py-5">
             <div class="row">
@@ -189,6 +181,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

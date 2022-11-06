@@ -1,15 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Spectral&display=swap');
-
-$fonts: (
-    heading-font: ('Spectral', serif),
-    paragraph-font: ('Roboto Mono', monospace)
-);
-
-$colors: (
-    primary: rgb(248, 248, 248),
-    secondary: green, 
-    tertiary: rgb(255, 255, 255)
-);
+@import url("/_colors.scss"), url("/_typography.scss");
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 body {
     background-color: map-get($colors, primary);
@@ -38,9 +28,9 @@ button:hover {
     transition: .3s ease-in-out;
 }
 
-.active-nav, nav ul li:hover {
+.active-nav, a:hover {
     text-decoration: underline;
-    color: inherit;
+    color: map-get($colors, secondary);
 }
 
 p, a {
