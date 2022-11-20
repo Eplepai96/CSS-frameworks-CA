@@ -1,5 +1,7 @@
-@import url("/_colors.scss"), url("/_typography.scss");
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "colors";
+@import "typography";
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
     background-color: map-get($colors, primary);
