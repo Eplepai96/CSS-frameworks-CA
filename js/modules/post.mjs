@@ -2,7 +2,7 @@
 export function postTemplate (data) {
     const post = document.createElement("div");
     post.classList.add("container");
-    post.innerText = data.title;
+    
     
     
     post.style.padding = "30px"; 
@@ -14,6 +14,12 @@ export function postTemplate (data) {
     
     const tags = data.tags;
 
+    if (data.title) {
+        const title = document.createElement ("p")
+        post.innerText = data.title;
+        title.style.fontWeight = "bold"
+        post.append(title)
+    }
     if (data.body) {
         const body = data.body;
         post.append (body)
