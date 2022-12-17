@@ -6,3 +6,5 @@ export const postUrl = baseUrl + `/api/v1/social/post`;
 export const postsUrl = baseUrl + `/api/v1/social/posts`;
 export const updateUrl = baseUrl + `/api/v1/social/posts/`;
 export const deleteUrl = baseUrl + `/api/v1/social/posts/`;
+
+export const updateProfileUrl = baseUrl + `/api/v1/social/profiles`;

@@ -11,6 +11,6 @@ export async function deletePost (id) {
         method: "delete"
     })
 
-    console.log(post);
+    console.log(id);
     return await response.json();
 }

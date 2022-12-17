@@ -5,16 +5,25 @@ import { signInEventListener } from "./js/modules/signIn.mjs";
 signInEventListener();
 
 import * as posts from "./js/modules/postsMainFile.mjs";
-import { getPost } from "./js/modules/postsMainFile.mjs";
-// posts.createPost({
-//   title: "this is a post",
-//   body: "this is the post content"
-// });
+import { postTemplate } from "./js/modules/post.mjs";
+import { getPosts } from "./js/modules/postsMainFile.mjs";
+import { renderPostTemplate } from "./js/modules/post.mjs";
+import { renderPostTemplates } from "./js/modules/post.mjs";
+import { createPostEventListener } from "./js/modules/postPost.mjs";
 
-// getPost(2).then(console.log())
 posts.getPosts().then(console.log)
-// posts.updatePost({
-    
-// })
 
+async function testTemplates() {
+    const posts = await getPosts();
+    const postContainer = document.querySelector(".posts-container");
+    renderPostTemplates(posts, postContainer);
+}
+testTemplates();
 
+createPostEventListener()
+
+import { updateProfileEventListener } from "./js/modules/updateHandler.mjs";
+updateProfileEventListener()
+
+import { setupSearch } from "./js/modules/search/search.mjs";
+setupSearch(posts)

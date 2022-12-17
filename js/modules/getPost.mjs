@@ -1,5 +1,4 @@
 import { postsUrl } from "./callApi.mjs";
-import { postUrl } from "./callApi.mjs";
 import { authFetch } from "./authFetch.mjs";
 
 
