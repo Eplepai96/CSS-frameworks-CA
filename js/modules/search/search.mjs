@@ -1,6 +1,6 @@
 export function setupSearch(posts) {
-    const searchForm = document.querySelector("form#search");
-
+    const searchForm = document.querySelector("#search-form");
+console.log(searchForm)
   searchForm.addEventListener ("submit", function (event) {
     event.preventDefault();
     const form = event.target;
@@ -11,9 +11,8 @@ export function setupSearch(posts) {
 
         return title.includes(term)
     })
-    console.log(Object.values(typeof(posts)))
+    
     console.log(filteredPosts);
 })
-console.log(Object.values(posts))
 }
 

@@ -13,6 +13,9 @@ import { createPostEventListener } from "./js/modules/postPost.mjs";
 
 posts.getPosts().then(console.log)
 
+import { setupSearch } from "./js/modules/search/search.mjs";
+setupSearch()
+
 async function testTemplates() {
     const posts = await getPosts();
     const postContainer = document.querySelector(".posts-container");
@@ -25,5 +28,3 @@ createPostEventListener()
 import { updateProfileEventListener } from "./js/modules/updateHandler.mjs";
 updateProfileEventListener()
 
-import { setupSearch } from "./js/modules/search/search.mjs";
-setupSearch(posts)

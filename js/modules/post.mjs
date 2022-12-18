@@ -3,7 +3,10 @@ export function postTemplate (data) {
     const post = document.createElement("div");
     post.classList.add("container");
     
-    
+    const button = document.createElement("button")
+    button.classList.add("btn-primary")
+    button.innerText = "Hello";
+    post.append(button)
     
     post.style.padding = "30px"; 
     post.style.border = "1px rgb(182, 182, 182) solid";
@@ -29,6 +32,7 @@ export function postTemplate (data) {
         img.src = data.media;
         img.alt = `image from ${data.title}`
         img.style.maxWidth = "100%"
+        img.style.minWidth = "100%"
         img.style.objectFit = "cover"
         post.append(img)
     }
