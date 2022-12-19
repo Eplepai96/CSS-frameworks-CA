@@ -1,11 +1,12 @@
+import { Button } from "bootstrap";
 
 export function postTemplate (data) {
     const post = document.createElement("div");
     post.classList.add("container");
     
-    const button = document.createElement("button")
-    button.classList.add("btn-primary")
-    button.innerText = "Hello";
+    
+    const button = document.createElement ("button");
+    post.innerText = button
     post.append(button)
     
     post.style.padding = "30px"; 
@@ -15,7 +16,7 @@ export function postTemplate (data) {
     post.style.boxShadow = "1px 2px rgb(182, 182, 182)"
     post.style.borderBottom = "1px solid black"
     
-    const tags = data.tags;
+    
 
     if (data.title) {
         const title = document.createElement ("p")
@@ -33,6 +34,7 @@ export function postTemplate (data) {
         img.alt = `image from ${data.title}`
         img.style.maxWidth = "100%"
         img.style.minWidth = "100%"
+        img.style.maxHeight = "80vh"
         img.style.objectFit = "cover"
         post.append(img)
     }
