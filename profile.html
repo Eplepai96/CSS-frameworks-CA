@@ -37,10 +37,6 @@
                 </ul>
               </li> -->
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -48,32 +44,80 @@
     <!-- User info -->
     <!-- Personal -->
     <main>
-        <div class="container d-flex justify-content-center">
-            <div class="row">
-                <div class="col-12">
-                    <i class="far fa-5x fa-grin-beam d-flex justify-content-center mt-5"></i>
-                    <p class="mt-3 text-center fw-bold fs-4">Username</p>
-                    <button class="btn btn-primary">Edit profile</button>
+        <div class="container" id="display-info">
+            <div class="container d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-12">
+                        <i class="far fa-5x fa-grin-beam d-flex justify-content-center mt-5"></i>
+                        
+                        <!-- <button class="btn btn-primary mt-4" id="edit-profile-btn">Edit profile</button> -->
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-1 col-sm-1">
+                        <p class="fw-bold">Name:</p>
+                    </div>
+                    <div class="col-md-11 col-sm-11">
+                        <p id="name-container"></p>
+                    </div>
+                    <div class="col-md-1 col-sm-1">
+                        <p class="fw-bold">Email:</p>
+                    </div>
+                    <div class="col-md-11 col-sm-11">
+                        <p id="email-container"></p>
+                    </div>
+                    <div class="col-md-1 col-sm-1">
+                        <p class="fw-bold">Banner:</p>
+                   </div>
+                    <div class="col-md-11 col-sm-11">
+                        <p id="banner-container"></p>
+                    </div>
+                    <div class="col-md-1 col-sm-1">
+                        <p class="fw-bold">Avatar:</p>
+                    </div>
+                    <div class="col-md-11 col-sm-11">
+                        <p id="avatar-container"></p>
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <div class="container mt-5">
+        
+        <div id="display-update-form" class="container border border-black mt-2 post rounded">
             <div class="row">
-                <div class="col-12">
-                    <p class="fw-bold">Name:</p>
-                </div>
-                <div class="col-12">
-                    <p class="fw-bold">Age:</p>
-                </div>
-                <div class="col-12">
-                    <p class="fw-bold">Located:</p> 
+                <div class="col-12 justify-content-center">
+                    <form action="post" id="update-profile-form" method="post">
+                        <h1>Edit profile</h1>
+                        <div class="form-group">
+                            <label for="" class="mt-3">Name</label>
+                            <input type="text" name="name" class="form-control border rounded-5 w-75" disabled>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="" class="mt-3">Email</label>
+                            <input type="email" name="email" class="form-control border rounded-5 w-75" disabled>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="mt-3">Banner</label>
+                            <input type="url" name="banner" class="form-control border rounded-5 mb-4 w-75">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="mt-3">Avatar</label>
+                            <input type="url" name="avatar" class="form-control border rounded-5 mb-4 w-75">
+                        </div>
+                        
+                        <input type="submit" value="Save changes" class="btn btn-primary m-1 px-4 fw-bold mb-3">
+                    </form>               
                 </div>
             </div>
         </div>
     
         <!-- Contacts -->
-        <div class="container mt-5">
+        <!-- <div class="container mt-5">
             <div class="row">
                 <div class="col-12">
                     <p class="fw-bold">Your contacts:</p>
@@ -101,10 +145,10 @@
                 </div>
             </div>
         </div>
-    </main>
+    </main> -->
     
     <!-- Posts -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-12 mt-5 text-center">
                 <div>
@@ -112,10 +156,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Text post -->
-    <div class="container border border-black mt-3 rounded post">
+    <!-- <div class="container border border-black mt-3 rounded post">
         <div class="row">
             <div class="col-md-1 col-sm-1">
                 <i class="far fa-2x fa-grin-beam m-2"></i>
@@ -136,10 +180,10 @@
                 <a href="#"><i class="far fa-2x fa-share-square p-2 mb-2"></i></a>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Image post -->
-    <div class="container border border-black mt-5 mb-3 rounded post">
+    <!-- <div class="container border border-black mt-5 mb-3 rounded post">
         <div class="row">
             <div class="col-md-1 col-sm-1">
                 <i class="far fa-2x fa-grin-beam m-2"></i>
@@ -165,10 +209,10 @@
                 <a href="#"><i class="far fa-2x fa-share-square p-2 mb-2"></i></a>
             </div>
         </div>
-    </div>
+    </div> -->
     
     <!-- Shared image post -->
-    <div class="container border border-black mt-5 mb-3 rounded post">
+    <!-- <div class="container border border-black mt-5 mb-3 rounded post">
         <div class="row">
             <div class="col-md-1 col-sm-1">
                 <i class="far fa-2x fa-grin-beam m-2"></i>
@@ -210,7 +254,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Footer -->
     <footer>
@@ -223,5 +267,6 @@
         </div>
     </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/index.js" type="module"></script>
 </body>
 </html>
