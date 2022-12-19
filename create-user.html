@@ -15,25 +15,32 @@
             <div class="row">
                 <div class="col-12">
                     <i class="far fa-6x fa-grin-beam d-flex justify-content-center mt-5"></i>
-                    <form action="/profile.html" class="login-form" method="post">
+                    <form class="register-form" method="post">
+                        <div>
+                            <label for="name" class="mt-4">Name</label>
+                            <input class="w-100 rounded-5 bg-white border-light new-name" type="name" id="name" autocomplete="name" pattern="^[\w]+$" required>
+                        </div>
                         <div>
                             <label for="email" class="mt-4">Email</label>
-                            <input class="w-100 rounded-5 bg-white border-light" autocomplete="password" type="email" id="email" pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Email must be a valid noroff email; example@(stud.)noroff.no" required>
+                            <input class="w-100 rounded-5 bg-white border-light new-email" type="email" id="email" autocomplete="email" pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Email must be a valid noroff email; example@(stud.)noroff.no" required>
                         </div>
                         <div>
                             <label for="password" class="mt-3">Password</label>
-                            <input class="w-100 rounded-5 bg-white border-light" autocomplete="current-password" type="password" id="password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" minlength="8" title="Password must be at least 8 characters" required>
+                            <input class="w-100 rounded-5 bg-white border-light new-password" type="password" id="password" autocomplete="current-password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" minlength="8" title="Password must be at least 8 characters" required>
                         </div>
-                        <input type="submit" value="Log in" class="btn btn-primary mt-4 w-100" id="login-btn">     
+                        <div class="create-user-message">
+
+                        </div>
+                        <input type="submit" value="Create user" class="btn btn-primary mt-4 w-100" id="create-user-btn">    
                     </form> 
                     <div class="d-flex justify-content-center">
-                        <a href="create-user.html"><button class="btn btn-secondary mt-5">Create new user</button></a>
+                        <a href="index.html"><button class="btn btn-secondary mt-5">Back to sign in options</button></a>
                     </div>
                 </div>  
             </div>     
         </div>
     </main>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/index.js" type="module"></script>
+    <script type="module" src="/index.js" defer></script>
 </body>
 </html>
