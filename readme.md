@@ -1,11 +1,11 @@
-Hello! Thanks for having a look at this, I'm really not doing too great.
+Hello from the wrong side of deadline. I made a final attempt at completing this project, but I'm still missing edit and delete.
 
-- My main concern is file structure, as it's messing up my entire project, and makes every new (and old) function buggy. I tried adding a switch with the current structure, which didn't work. How can I restructure my files to make it functional? I'm afraid I'll get very lost if I try to copy Olivers structure this late.
+- Functional login
+- Functional sign up
+- Functional display of posts
+- Functional search
+- Functional update profile
 
-- My second biggest concern is update and delete post functionality. I want to add a delete button and an update button for each post created by the user. I think I'll be able to figure out the rest, but tips are appreciated.
+I realise this probably isn't enough, and that I'm likely to fail the course.
 
-- Of less concern is the update profile functionality. I want the form to display when I click the "Edit profile" button, and disappear when I submit the changes. I thought I'd just create an eventlistener, but I'm unable to apply styles to both the form and the buttons.
-
-- Which leads to my last question; how do I style the posts? I'm able to apply styles to the post, but not it's content.
-
-if theres anything else I need to implement in order to pass, please let me know. I hope I make it in time
+I wish I had more time. I spent a lot of time on a bootstrap error, and I'm required to work a lot leading up to christmas. I also wish I had seen Olivers video sooner, as my file structure has caused a lot of confusion and problems with routing. I really hate to give up, but I think it's time I accept my faith this time :P Gonna be a hard year with few breaks, due to this second resit, but I'll at least be more prepared next time :)
